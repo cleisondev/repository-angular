@@ -23,7 +23,8 @@
 
     li{
         flex: 20%;
-        height: 100%;
+        width: 160px;
+        height: 160px;
 
         button{
             width: 100%;
@@ -37,6 +38,16 @@
             &:hover{
                 background: var(--primary);
             }
+        }
+    }
+   }
+
+
+   @media (max-width: 750px){
+    ul{
+        li{
+            flex:100%;
+            
         }
     }
    }
