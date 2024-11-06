@@ -15,20 +15,20 @@
 
     &.btn-primary {
         color: var(--white);
-        background-color: var(--tertiary-010);
+        background-color: var(--secondary-010);
 
         &:hover{
-            background-color: var(--secondary-010);
+            background-color: var(--primary);
             color: var(--white);
         }
     }
 
     &.btn-secondary {
         color: var(--white);
-        background-color: var(--tertiary-010);
+        background-color: var(--secondary-010);
 
         &:hover{
-            background-color: var(--secondary-010);
+            background-color: var(--primary);
         }
     }
 }
