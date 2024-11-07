@@ -21,6 +21,14 @@ export class KnowledgeComponent {
     {
       src: 'assets/icons/knowledges/typescript.svg',
       alt: 'Ícone de conhecimento de Typescript'
+    },
+    {
+      src: 'assets/icons/knowledges/sql.svg',
+      alt: 'Ícone de conhecimento de SQL'
+    },
+    {
+      src: 'assets/icons/knowledges/apik.svg',
+      alt: 'Ícone de conhecimento de API'
     }
   ])
 }

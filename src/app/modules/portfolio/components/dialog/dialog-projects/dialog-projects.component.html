@@ -11,7 +11,7 @@
 
     <nav>
         @for(item of getData()?.links; track item){
-        <a href="item.href" target="_blank" class="btn btn-third">
+        <a [href]="item.href" target="_blank" class="btn btn-third">
             {{item.name}}
         </a>
         }
