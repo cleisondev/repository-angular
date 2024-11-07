@@ -7,7 +7,8 @@
     cursor: pointer;
 
     &.btn-primary,
-    &.btn-secondary{
+    &.btn-secondary,
+    &.btn-third{
             padding: 10px;
             font-size: 16px;
             border-radius: 7px;
@@ -21,6 +22,11 @@
             background-color: var(--primary);
             color: var(--white);
         }
+    }
+
+    &.btn-third{
+        background-color: var(--white);
+        color: var(--primary);
     }
 
     &.btn-secondary {

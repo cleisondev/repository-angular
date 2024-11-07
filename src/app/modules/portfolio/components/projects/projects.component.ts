@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { IProjects } from '../../interface/IProjects.interface';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
 import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
 
@@ -13,7 +13,7 @@ import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projec
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-#dialog = inject(MatDialog)
+  #dialog = inject(MatDialog)
 
   public arrayPoject = signal<IProjects[]>([
     {
@@ -32,8 +32,8 @@ export class ProjectsComponent {
     }
   ]);
 
-  public openDialog(data: IProjects){
-    this.#dialog.open(DialogProjectsComponent,{
+  public openDialog(data: IProjects) {
+    this.#dialog.open(DialogProjectsComponent, {
       data,
       panelClass: EDialogPanelClass.PROJECTS
     })
